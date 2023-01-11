@@ -10,7 +10,15 @@
     }
 </style>
 <body>
-    <h1>Hello {{ name }}</h1>
-    <p>It's project: {{ project }}</p>
+    <h1>Orders</h1>
+    {{ object_list }}
+
+{% for obj in object_list %}
+    <p><strong>№ п/п: {{ obj.id }}</strong></p>
+    <p>Дата создания: {{ obj.order_dt }}</p>
+    <p>Имя: {{ obj.order_name }}</p>
+    <p>Телефон: {{ obj.order_phone }}</p>
+{% endfor %}
+
 </body>
 </html>
