@@ -5,20 +5,34 @@
     <title>Title</title>
 </head>
 <style>
-    h1:hover{
-        color: blue;
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+    th, td{
+        border: 1px solid black;
+        padding: .3em;
     }
 </style>
 <body>
-    <h1>Orders</h1>
-    {{ object_list }}
-
-{% for obj in object_list %}
-    <p><strong>№ п/п: {{ obj.id }}</strong></p>
-    <p>Дата создания: {{ obj.order_dt }}</p>
-    <p>Имя: {{ obj.order_name }}</p>
-    <p>Телефон: {{ obj.order_phone }}</p>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Date</th>
+        <th>Name</th>
+        <th>Phone</th>
+    </tr>
+    {% for obj in object_list %}
+        <tr>
+            <td>{{ obj.id }}</td>
+            <td>{{ obj.order_dt }}</td>
+            <td>{{ obj.order_name }}</td>
+            <td>{{ obj.order_phone }}</td>
+        </tr>
 {% endfor %}
+</table>
+
+
 
 </body>
 </html>
