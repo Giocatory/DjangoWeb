@@ -1,40 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giocatory Blog</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/main.css">
 </head>
-<style>
-    *{
-        box-sizing: border-box;
-        margin: 0;
-    }
-    th, td{
-        border: 1px solid black;
-        padding: .3em;
-    }
-</style>
 <body>
+    <main class="welcome_section">
+        <div class="blog_name">
+            <p>giocatory blog</p>
+            <hr>
+            <h1>Статьи программиста любителя</h1>
+            <a href="#" class="choice_article">Подробнее</a>
+        </div>
+        <div class="author_image">
+        </div>
+    </main>
 
-{% if object_list %}
-<table>
-    <tr>
-        <th>Id</th>
-        <th>Date</th>
-        <th>Name</th>
-        <th>Phone</th>
-    </tr>
-    {% for obj in object_list %}
-        <tr>
-            <td>{{ obj.id }}</td>
-            <td>{{ obj.order_dt }}</td>
-            <td>{{ obj.order_name }}</td>
-            <td>{{ obj.order_phone }}</td>
-        </tr>
-{% endfor %}
-</table>
-{% else %}
-<p>Данных нет</p>
-{% endif %}
+    <section class="subject_section">
+        <div class="wrap_img">
+            <img src="images/section_back_1.jpg" alt="">
+        </div>
+    </section>
+    
+    <section class="topics_articles_section"></section>
+    <section class="why_section"></section>
+    <section class="motivation_section"></section>
+    <section class="contacts"></section>
+    <footer></footer>
 </body>
 </html>

@@ -1,0 +1,108 @@
+$text_and_buttons: #e6dcc6;
+$background_darkText: #2a292b;
+
+*, html {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $text_and_buttons;
+
+    a {
+        text-decoration: none;
+    }
+    
+    body {
+        position: relative;
+        background-color: $background_darkText;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+
+.welcome_section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+
+    .author_image {
+        background-image: url("../images/crop_image.jpg");
+        background-size: cover;
+        width: 30rem;
+        height: 35rem;
+    }
+    
+    .blog_name {
+        align-self: baseline;
+        flex-basis: 50%;
+        margin-right: 2rem;
+        margin-top: 5rem;
+        
+        p {
+            margin: 1rem;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 1rem;
+            font-size: 5em;
+        }
+        
+        a {
+            display: block;
+            margin-top: 2rem;
+            width: 20rem;
+            text-align: center;
+            font-size: 2em;
+            background-color: $text_and_buttons;
+            color: $background_darkText;
+            padding: 1rem;
+            border-radius: 50rem;
+            -webkit-border-radius: 50rem;
+            -moz-border-radius: 50rem;
+            -ms-border-radius: 50rem;
+            -o-border-radius: 50rem;
+
+            &:hover {
+                border: .1rem solid $text_and_buttons;
+                color: $text_and_buttons;
+                background-color: $background_darkText;
+
+                -webkit-box-shadow: 0px 0px 26px -4px rgba(230, 220, 198, .6);
+                -moz-box-shadow: 0px 0px 26px -4px rgba(230, 220, 198, .6);
+                box-shadow: 0px 0px 26px -4px rgba(230, 220, 198, .6);
+            }
+        }
+    }
+
+    .author_image {
+        margin-top: 5rem;
+        border-radius: .5rem;
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+        -ms-border-radius: .5rem;
+        -o-border-radius: .5rem;
+        -webkit-box-shadow: 0px 0px 26px -4px rgba(230, 220, 198, .6);
+        -moz-box-shadow: 0px 0px 26px -4px rgba(230, 220, 198, .6);
+        box-shadow: 0px 0px 26px -4px rgba(230, 220, 198, .6);
+}
+}
+
+.subject_section {
+    position: relative;
+    
+    .wrap_img {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        img {
+            opacity: .1;
+        }
+    }
+}
