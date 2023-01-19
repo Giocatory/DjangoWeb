@@ -1,5 +1,6 @@
 $text_and_buttons: #e6dcc6;
 $background_darkText: #2a292b;
+$light_background: #e6dcc6;
 
 *, html {
     box-sizing: border-box;
@@ -139,11 +140,161 @@ $background_darkText: #2a292b;
 
 .topics_articles_section {
 
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin:5rem 2rem 5rem 2rem;
+    }
+
     .topics_block {
         display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        margin: 2rem;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 20vw;
+
+            p {
+                text-align: center;
+            }
+
+            .header {
+                text-transform: uppercase;
+                font-weight: bold;
+                margin: 1rem;
+            }
+        }
 
         img {
+            display: block;
             width: 15rem;
+            height: 15rem;
+
+            -webkit-box-shadow: 0px 0px 26px -4px rgba(230, 220, 198, .6);
+            -moz-box-shadow: 0px 0px 26px -4px rgba(230, 220, 198, .6);
+            box-shadow: 0px 0px 26px -4px rgba(230, 220, 198, .6);
         }
     }
+}
+
+.motivation_section {
+    display: flex;
+    background-color: $light_background;
+
+    img {
+        display: block;
+        width: 25vw;
+        height: 90vh;
+        margin: 2rem 5rem;
+    }
+
+    .motivation_text {
+
+        h2 {
+            color: $background_darkText;
+            font-size: 4em;
+            text-transform: uppercase;
+            margin: 5rem;
+            text-align: center;
+        }
+
+        p {
+            color:$background_darkText;
+            text-align: center;
+            font-size: 2em;
+            margin: 5rem;
+        }
+
+        a {
+            display: block;
+            margin: 0 auto;
+            width: 20rem;
+            text-align: center;
+            font-size: 2em;
+            background-color: $background_darkText;
+            color: $text_and_buttons;
+            padding: 1rem;
+            border-radius: 50rem;
+            -webkit-border-radius: 50rem;
+            -moz-border-radius: 50rem;
+            -ms-border-radius: 50rem;
+            -o-border-radius: 50rem;
+
+            &:hover {
+                border: .1rem solid $background_darkText;
+                color: $background_darkText;
+                background-color: $text_and_buttons;
+
+                -webkit-box-shadow: 0px 0px 26px -4px rgba(42,41,43, .7);
+                -moz-box-shadow: 0px 0px 26px -4px rgba(42,41,43, .7);
+                box-shadow: 0px 0px 26px -4px rgba(42,41,43, .7);
+            }
+        }
+    }
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+
+    img {
+        display: block;
+        width: 25vw;
+    }
+
+    .contact_info {
+
+        h2 {
+            font-size: 3em;
+            margin: 2rem;
+        }
+
+        a {
+            display: block;
+            margin: 2rem;
+            width: 15rem;
+            text-align: center;
+            font-size: 2em;
+            background-color: $text_and_buttons;
+            color: $background_darkText;
+            padding: .3rem;
+            border-radius: 50rem;
+            -webkit-border-radius: 50rem;
+            -moz-border-radius: 50rem;
+            -ms-border-radius: 50rem;
+            -o-border-radius: 50rem;
+    
+            &:hover {
+                color: $text_and_buttons;
+                background-color: $background_darkText;
+    
+                -webkit-box-shadow: 0px 0px 1px 1px rgba(230, 220, 198, 1);
+                -moz-box-shadow: 0px 0px 1px 1px rgba(230, 220, 198, 1);
+                box-shadow: 0px 0px 1px 1px rgba(230, 220, 198, 1);
+            }
+        }
+
+        p {
+            margin: 2rem;
+        }
+        
+        table {
+            margin-top: 10rem;
+
+            td {
+                padding:.2rem .5rem;
+
+                &:first-child {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
 }

@@ -112,9 +112,126 @@
   margin-bottom: 5rem;
 }
 
+.topics_articles_section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 5rem 2rem 5rem 2rem;
+}
 .topics_articles_section .topics_block {
   display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  margin: 2rem;
+}
+.topics_articles_section .topics_block .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+}
+.topics_articles_section .topics_block .info p {
+  text-align: center;
+}
+.topics_articles_section .topics_block .info .header {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 1rem;
 }
 .topics_articles_section .topics_block img {
+  display: block;
   width: 15rem;
+  height: 15rem;
+  box-shadow: 0px 0px 26px -4px rgba(230, 220, 198, 0.6);
+}
+
+.motivation_section {
+  display: flex;
+  background-color: #e6dcc6;
+}
+.motivation_section img {
+  display: block;
+  width: 25vw;
+  height: 90vh;
+  margin: 2rem 5rem;
+}
+.motivation_section .motivation_text h2 {
+  color: #2a292b;
+  font-size: 4em;
+  text-transform: uppercase;
+  margin: 5rem;
+  text-align: center;
+}
+.motivation_section .motivation_text p {
+  color: #2a292b;
+  text-align: center;
+  font-size: 2em;
+  margin: 5rem;
+}
+.motivation_section .motivation_text a {
+  display: block;
+  margin: 0 auto;
+  width: 20rem;
+  text-align: center;
+  font-size: 2em;
+  background-color: #2a292b;
+  color: #e6dcc6;
+  padding: 1rem;
+  border-radius: 50rem;
+  -webkit-border-radius: 50rem;
+  -moz-border-radius: 50rem;
+  -ms-border-radius: 50rem;
+  -o-border-radius: 50rem;
+}
+.motivation_section .motivation_text a:hover {
+  border: 0.1rem solid #2a292b;
+  color: #2a292b;
+  background-color: #e6dcc6;
+  box-shadow: 0px 0px 26px -4px rgba(42, 41, 43, 0.7);
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.contacts img {
+  display: block;
+  width: 25vw;
+}
+.contacts .contact_info h2 {
+  font-size: 3em;
+  margin: 2rem;
+}
+.contacts .contact_info a {
+  display: block;
+  margin: 2rem;
+  width: 15rem;
+  text-align: center;
+  font-size: 2em;
+  background-color: #e6dcc6;
+  color: #2a292b;
+  padding: 0.3rem;
+  border-radius: 50rem;
+  -webkit-border-radius: 50rem;
+  -moz-border-radius: 50rem;
+  -ms-border-radius: 50rem;
+  -o-border-radius: 50rem;
+}
+.contacts .contact_info a:hover {
+  color: #e6dcc6;
+  background-color: #2a292b;
+  box-shadow: 0px 0px 1px 1px rgb(230, 220, 198);
+}
+.contacts .contact_info p {
+  margin: 2rem;
+}
+.contacts .contact_info table {
+  margin-top: 10rem;
+}
+.contacts .contact_info table td {
+  padding: 0.2rem 0.5rem;
+}
+.contacts .contact_info table td:first-child {
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
