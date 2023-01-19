@@ -10,8 +10,9 @@ $light_background: #e6dcc6;
 
     a {
         text-decoration: none;
+        cursor: pointer;
     }
-    
+
     body {
         position: relative;
         background-color: $background_darkText;
@@ -21,7 +22,6 @@ $light_background: #e6dcc6;
         width: 0;
     }
 }
-
 
 .welcome_section {
     width: 100vw;
@@ -239,6 +239,7 @@ $light_background: #e6dcc6;
 }
 
 .contacts {
+    position: relative;
     display: flex;
     justify-content: space-around;
     padding: 2rem;
@@ -255,7 +256,7 @@ $light_background: #e6dcc6;
             margin: 2rem;
         }
 
-        a {
+        button {
             display: block;
             margin: 2rem;
             width: 15rem;
@@ -273,7 +274,7 @@ $light_background: #e6dcc6;
             &:hover {
                 color: $text_and_buttons;
                 background-color: $background_darkText;
-    
+                
                 -webkit-box-shadow: 0px 0px 1px 1px rgba(230, 220, 198, 1);
                 -moz-box-shadow: 0px 0px 1px 1px rgba(230, 220, 198, 1);
                 box-shadow: 0px 0px 1px 1px rgba(230, 220, 198, 1);
@@ -297,4 +298,51 @@ $light_background: #e6dcc6;
         }
     }
     
+    .dialog_for_user {
+        visibility: hidden;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 40%;
+        top: 20%;
+        background-color: $light_background;
+
+        button {
+            position: absolute;
+            top: 1%;
+            right: 1%;
+            color: $background_darkText;
+            border: .1rem solid $background_darkText;
+            padding: .1rem;
+
+            &:hover {
+                background-color: red;
+                color: yellow;
+                cursor: pointer;
+            }
+        }
+
+        label, input, textarea {
+            display: block;
+            color: $background_darkText;
+            margin: .2rem;
+        }
+        .get_text {
+            margin: 0 auto;
+            border-radius: 50rem;
+            -webkit-border-radius: 50rem;
+            -moz-border-radius: 50rem;
+            -ms-border-radius: 50rem;
+            -o-border-radius: 50rem;
+
+            &:hover {
+                color: $text_and_buttons;
+                background-color: $background_darkText;
+    
+                -webkit-box-shadow: 0px 0px 1px 1px rgba(230, 220, 198, 1);
+                -moz-box-shadow: 0px 0px 1px 1px rgba(230, 220, 198, 1);
+                box-shadow: 0px 0px 1px 1px rgba(230, 220, 198, 1);
+            }
+        }
+    }
 }

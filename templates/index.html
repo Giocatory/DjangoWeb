@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
+    
     <main class="welcome_section">
         <div class="blog_name">
             <p>giocatory blog</p>
             <hr>
             <h1>Статьи программиста любителя</h1>
-            <a href="#" class="choice_article">Подробнее</a>
+            <a href="#article_section_info" class="choice_article">Подробнее</a>
         </div>
         <div class="author_image">
         </div>
@@ -31,7 +32,8 @@
         <p>Тут вы найдете не только статьи и материалы по программированию на Python, но и обучающие курсы и видео, которые позволят вам научиться создавать сложные программы и решать реальные задачи. Стараюсь объяснить лучшие тренды и знания в области программирования, чтобы помочь вам стать профессиональным разработчиком.
         </p>
     </section>
-    
+
+    <anchor id="article_section_info" />
     <section class="topics_articles_section">
         <h2>Статьи</h2>
         <div class="topics_block">
@@ -58,14 +60,15 @@
         <div class="motivation_text">
             <h2>Просто попробуй и все получится!</h2>
             <p>Не важно где и кем ты работаешь, Python настолько прост, что ты сможешь реализовать всё, что пожелаешь....</p>
-            <a href="#">Резюме автора</a>
+            <a href="pages/resume.html">Резюме автора</a>
         </div>
     </section>
+
     <section class="contacts">
         <div class="contact_info">
             <h2>Контакты</h2>
             <p>Можешь предложить любую идею<br> и рассмотрю каждое письмо</p>
-            <a href="#">Написать</a>
+            <button href="#" class="showDialog" onclick="ShowDialog();">Написать</button>
             <table>
                 <tr>
                     <td>E-MAIL</td>
@@ -78,6 +81,30 @@
             </table>
         </div>
         <img src="images/contacts.jpg" alt="contacts image Dicaprio">
+
+        <dialog class="dialog_for_user">
+            <button onclick="CloseDialog();" class="closed_dialog">X</button>
+            <form action="" method="post">
+                <label for="name">Ваше имя: </label>
+                <input type="text" id="name">
+                <label for="email">Ваш e-mail: </label>
+                <input type="text" id="email">
+                <label for="submit_text">Текст сообщения: </label>
+                <textarea name="user_text" id="submit_text" cols="30" rows="10"></textarea>
+                <input type="submit" value="Отправить" class="get_text">
+            </form>
+        </dialog>
     </section>
+    <script>
+        function CloseDialog(){
+            let dialog = document.querySelector('.dialog_for_user');
+            dialog.style["visibility"] = "hidden";
+        }
+
+        function ShowDialog(){
+            let dialog = document.querySelector('.dialog_for_user');
+            dialog.style["visibility"] = "visible";  
+        }
+    </script>
 </body>
 </html>
