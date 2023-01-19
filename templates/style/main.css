@@ -76,6 +76,10 @@
 
 .subject_section {
   position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .subject_section .wrap_img {
   position: absolute;
@@ -84,4 +88,33 @@
 }
 .subject_section .wrap_img img {
   opacity: 0.1;
+  width: 100vw;
+  height: 70vh;
+}
+.subject_section hr {
+  padding: 0;
+  height: 0;
+  border: none;
+  border-top: 0.25rem dotted #e6dcc6;
+  width: 30%;
+  margin: 2rem;
+}
+.subject_section h2 {
+  font-size: 2.5rem;
+  margin: 5rem 2rem 2rem 2rem;
+}
+.subject_section p {
+  width: 70vw;
+  text-align: center;
+  font-size: 1.5em;
+}
+.subject_section p:last-child {
+  margin-bottom: 5rem;
+}
+
+.topics_articles_section .topics_block {
+  display: flex;
+}
+.topics_articles_section .topics_block img {
+  width: 15rem;
 }/*# sourceMappingURL=main.css.map */

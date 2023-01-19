@@ -95,6 +95,10 @@ $background_darkText: #2a292b;
 
 .subject_section {
     position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
     .wrap_img {
         position: absolute;
@@ -103,6 +107,43 @@ $background_darkText: #2a292b;
 
         img {
             opacity: .1;
+            width: 100vw;
+            height: 70vh;
+        }
+    }
+
+    hr {
+        padding: 0;
+	    height: 0;
+	    border: none;
+	    border-top: .25rem dotted $text_and_buttons;
+        width: 30%;
+        margin: 2rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin:5rem 2rem 2rem 2rem;
+    }
+
+    p {
+        width: 70vw;
+        text-align: center;
+        font-size: 1.5em;
+
+        &:last-child {
+            margin-bottom: 5rem;
+        }
+    }
+}
+
+.topics_articles_section {
+
+    .topics_block {
+        display: flex;
+
+        img {
+            width: 15rem;
         }
     }
 }
